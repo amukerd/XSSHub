@@ -25,13 +25,13 @@ if (typeof executed === 'undefined') {
     sparxsstext.style.fontWeight = "bold"; 
     sparxsstext.innerText = "SparXSS";
 
-    var invis2 = document.createElement("div");
-    invis2.style.position = "fixed";
-    invis2.style.top = "50%";
-    invis2.style.left = "50%";
-    invis2.style.transform = "translate(-50%, -50%)";
-    invis2.style.backgroundColor = "transparent";
-    invis2.style.textAlign = "center";
+    var invis = document.createElement("div");
+    invis.style.position = "fixed";
+    invis.style.top = "50%";
+    invis.style.left = "50%";
+    invis.style.transform = "translate(-50%, -50%)";
+    invis.style.backgroundColor = "transparent";
+    invis.style.textAlign = "center";
 
     var textBox1 = document.createElement("input");
     textBox1.type = "text";
@@ -366,12 +366,12 @@ if (typeof executed === 'undefined') {
         }
     });
 
-    invis2.appendChild(textBox1);
-    invis2.appendChild(button1);
+    invis.appendChild(textBox1);
+    invis.appendChild(button1);
 
     container.appendChild(button3);
     container.appendChild(sparxsstext);
-    container.appendChild(invis2);
+    container.appendChild(invis);
     container.appendChild(modeButton);
 
     document.body.appendChild(container);
